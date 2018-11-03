@@ -22,7 +22,7 @@ selected = false
 
 projects = ["comparative-cognition"]
 
-tags = ["goldfish", "dolphin", "cognition", "comparative-cognition", "perception"]
+tags = ["goldfish", "dolphin", "cognition", "comparative cognition", "perception"]
 
 math = false
 

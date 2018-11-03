@@ -20,7 +20,7 @@ location = "Melbourne, Florida"
 
 projects = ["comparative-cognition"]
 
-tags = ["goldfish", "cognition", "comparative-cognition", "perception"]
+tags = ["goldfish", "cognition", "comparative cognition", "perception"]
 
 selected = false
 

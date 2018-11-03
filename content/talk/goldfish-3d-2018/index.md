@@ -8,7 +8,7 @@ draft = false
 #time_start = 2013-11-01T00:00:00
 #time_end = 2030-06-01T15:00:00
 
-authors = ["KT Wilcox"]
+authors = ["CM DeLong", "K Gardner", "H Rachfal", "E Morrison", "KT Wilcox"]
 
 # Abstract and optional shortened version.
 abstract = ""
@@ -29,7 +29,7 @@ selected = false
 #   Otherwise, set `projects = []`.
 projects = ["comparative-cognition"]
 
-tags = ["goldfish", "cognition", "perception", "comparative-cognition"]
+tags = ["goldfish", "cognition", "perception", "comparative cognition"]
 
 url_pdf = ""
 url_slides = ""
