@@ -29,7 +29,7 @@ selected = true
 #   Otherwise, set `projects = []`.
 projects = ["topic-model"]
 
-tags = ["topic model", "bayesian", "text-mining"]
+tags = ["topic model", "bayesian", "text mining"]
 
 url_pdf = "https://www.psychometricsociety.org/sites/default/files/IMPS_2018_Final_Program_F.pdf"
 url_slides = ""

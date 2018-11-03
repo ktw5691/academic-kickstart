@@ -29,7 +29,7 @@ selected = false
 #   Otherwise, set `projects = []`.
 projects = ["topic-model"]
 
-tags = ["topic-model", "bayesian", "text-mining"]
+tags = ["topic model", "bayesian", "text mining"]
 
 url_pdf = ""
 url_slides = ""
