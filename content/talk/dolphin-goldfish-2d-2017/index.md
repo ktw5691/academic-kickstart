@@ -1,11 +1,11 @@
 +++
 title = "Visual discrimination of rotated 2D objects in a bottlenose dolphin (Tursiops truncatus) and goldfish (Carassius auratus)"
-date = "2017-11-01T00:00:00"
+date = "2018-11-01T00:00:00"
 draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-#time_start = 2013-11-01T00:00:00
+time_start = 2017-11-01T00:00:00
 #time_end = 2030-06-01T15:00:00
 
 authors = ["CM DeLong", "W Fellner", "H Harley", "I Fobe", "KT Wilcox", "K Gardner", "K Odell"]

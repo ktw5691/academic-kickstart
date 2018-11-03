@@ -1,11 +1,11 @@
 +++
 title = "An introduction to ensemble methods for machine learning"
-date = "2016-04-23T00:00:00"
+date = "2018-11-01T00:00:00"
 draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-#time_start = 2013-11-01T00:00:00
+time_start = 2016-04-23T00:00:00
 #time_end = 2030-06-01T15:00:00
 
 authors = ["KT Wilcox"]

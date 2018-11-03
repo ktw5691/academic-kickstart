@@ -1,11 +1,11 @@
 +++
 title = "Text mining with a Bayesian hidden topic Markov model"
-date = "2017-04-22T00:00:00"
+date = "2018-11-01T00:00:00"
 draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-#time_start = 2013-11-01T00:00:00
+time_start = 2017-04-22T00:00:00
 #time_end = 2030-06-01T15:00:00
 
 authors = ["KT Wilcox"]
