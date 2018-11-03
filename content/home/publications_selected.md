@@ -18,17 +18,17 @@ weight = 10
 #   2 = APA
 #   3 = MLA
 #   4 = Stream
-list_format = 1
+list_format = 4
 
 # Filter by publication type.
 # -1: Any
 #  0: Uncategorized
-#  1: Conference proceedings
-#  2: Journal
-#  3: Work in progress
-#  4: Technical report
-#  5: Book
-#  6: Book chapter
+#  1: Journal article
+#  2: Conference paper
+#  3: Technical report
+#  4: Book
+#  5: Book section
+#  6: Thesis
 publication_type = "-1"
-+++
 
++++

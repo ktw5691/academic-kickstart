@@ -2,7 +2,7 @@
 # About/Biography widget.
 widget = "about"
 active = true
-date = 2016-04-20T00:00:00
+date = 2018-10-30T00:00:00
 
 # Order that this section will appear in.
 weight = 5
@@ -10,31 +10,32 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Bayesian Statistics",
+    "Multilevel Modeling",
+    "Latent Variable Modeling",
+    "Integrative Data Analysis",
+    "Small-Sample Statistics",
+    "Topic Modeling"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "PhD in Quantitative Psychology"
+  institution = "University of Notre Dame"
+  year = 2022
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "MS in Applied Statistics"
+  institution = "Rochester Institute of Technology"
+  year = 2017
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "BS in Psychology"
+  institution = "Rochester Institute of Technology"
+  year = 2013
  
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Kenneth Tyler Wilcox is a graduate student in Quantitative Psychology at the University of Notre Dame. His research interests include Bayesian statistics, multilevel modeling, latent variable modeling, integrative data analysis, reproducible research, topic modeling, statistical programming, and cognition. He is a graduate student working with Dr. Lijuan (Peggy) Wang in the [Lab for Developmental and Health Methodology](https://ldhrm.nd.edu) on integrative data analysis and longitudinal data analysis. He collaborates with the [Comparative Cognition and Perception Lab](https://www.rit.edu/delonglab/).
