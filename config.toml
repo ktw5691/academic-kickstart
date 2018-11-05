@@ -214,6 +214,12 @@ enableGitInfo = true
     # List publications and talks related to the project?
     list_children = true
 
+    # Post list format
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = Stream
+    post_format = 2
+
     # Publication list format.
     #   0 = Simple
     #   1 = Detailed
@@ -249,7 +255,7 @@ enableGitInfo = true
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "mailto:kwilcox3@nd.edu"  # For a direct email link, use "mailto:test@example.org".
+    link = "#contact"
 
   [[params.social]]
     icon = "google-scholar"
