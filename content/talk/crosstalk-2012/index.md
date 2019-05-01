@@ -5,7 +5,8 @@ draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2013-11-01T00:00:00
+#time_start = 2013-11-01T00:00:00
+all_day = true
 #time_end = 2030-06-01T15:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -23,7 +24,7 @@ event_url = "http://www.mdx.ac.ae/research/conferences-and-events/past/emerging-
 location = "Dubai, United Arab Emirates"
 
 # Is this a selected talk? (true/false)
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this talk with one or more of your projects.

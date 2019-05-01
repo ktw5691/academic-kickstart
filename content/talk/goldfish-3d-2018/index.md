@@ -5,8 +5,9 @@ draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2018-04-01T00:00:00
+#time_start = 2018-04-01T00:00:00
 #time_end = 2030-06-01T15:00:00
+all_day = true
 
 authors = ["CM DeLong", "K Gardner", "H Rachfal", "E Morrison", "KT Wilcox"]
 
@@ -19,7 +20,7 @@ event_url = ""
 
 location = "Melbourne Beach, Florida"
 
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this talk with one or more of your projects.

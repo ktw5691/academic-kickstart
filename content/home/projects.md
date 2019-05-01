@@ -17,8 +17,13 @@ folder = "project"
 
 # View.
 # Customize how projects are displayed.
-# Legend: 0 = list, 1 = cards, 2 = showcase.
-view = 2
+# List format.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation (only available for publications)
+#   5 = Showcase (large images, only available for projects)
+view = 5
 
 # Widget layout
 # Legend: 0 = two columns (default), 1 = single column
@@ -49,4 +54,3 @@ filter_default = 0
   tag = ".comparative-cognition"
 
 +++
-

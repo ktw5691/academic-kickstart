@@ -5,8 +5,9 @@ draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2017-11-01T00:00:00
+#time_start = 2017-11-01T00:00:00
 #time_end = 2030-06-01T15:00:00
+all_day = true
 
 authors = ["CM DeLong", "W Fellner", "H Harley", "I Fobe", "KT Wilcox", "K Gardner", "K Odell"]
 
@@ -18,7 +19,7 @@ event_url = "http://www.comparativecognition.org/"
 
 location = "Vancouver, British Columbia"
 
-selected = false
+featured = false
 
 projects = ["comparative-cognition"]
 

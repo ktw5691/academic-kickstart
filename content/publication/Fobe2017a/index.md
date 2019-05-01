@@ -12,7 +12,7 @@ short_abstract = ""
 
 tags = ["comparative cognition", "perception", "cognition", "penguins", "African penguins", "Spheniscus demersus", "rhythm perception"]
 
-selected = false
+featured = false
 publication = "*Proceedings of Meetings on Acoustics*"
 doi = "10.1121/2.0000773"
 

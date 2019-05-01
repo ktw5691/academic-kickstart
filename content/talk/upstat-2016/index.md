@@ -5,8 +5,9 @@ draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2016-04-23T00:00:00
+#time_start = 2016-04-23T00:00:00
 #time_end = 2030-06-01T15:00:00
+all_day = true
 
 authors = ["KT Wilcox"]
 
@@ -18,7 +19,7 @@ event_url = "http://www.up-stat.org/"
 
 location = "Buffalo, New York"
 
-selected = false
+featured = false
 
 # Projects (optional).
 #   Associate this talk with one or more of your projects.

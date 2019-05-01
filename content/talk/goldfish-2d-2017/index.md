@@ -5,8 +5,9 @@ draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2017-04-01T00:00:00
+#time_start = 2017-04-01T00:00:00
 #time_end = 2030-06-01T15:00:00
+all_day = true
 
 authors = ["CM DeLong", "I Fobe", "KT Wilcox", "T O'Leary"]
 
@@ -22,7 +23,7 @@ projects = ["comparative-cognition"]
 
 tags = ["goldfish", "cognition", "comparative cognition", "perception"]
 
-selected = false
+featured = false
 
 math = false
 

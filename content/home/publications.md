@@ -15,12 +15,13 @@ weight = 20
 count = 10
 
 # List format.
-#   0 = Simple
-#   1 = Detailed
-#   2 = APA
-#   3 = MLA
-#   4 = Stream
-list_format = 2
+# List format.
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation (only available for publications)
+#   5 = Showcase (large images, only available for projects)
+view = 4
 
 # Filter by publication type.
 # -1: Any

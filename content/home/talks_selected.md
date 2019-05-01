@@ -1,6 +1,6 @@
 +++
 # Selected Talks widget.
-widget = "talks_selected"
+widget = "talks_featured"
 active = false
 date = 2016-04-20T00:00:00
 
@@ -11,8 +11,10 @@ subtitle = ""
 weight = 29
 
 # List format.
-#   0 = Simple
-#   1 = Detailed
-#   3 = Stream
-list_format = 0
+#   1 = List
+#   2 = Compact
+#   3 = Card
+#   4 = Citation (only available for publications)
+#   5 = Showcase (large images, only available for projects)
+view = 1
 +++
