@@ -13,7 +13,7 @@ title = "Kenneth Tyler Wilcox"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018 Kenneth Tyler Wilcox"
+copyright = "&copy; 2019 Kenneth Tyler Wilcox"
 
 theme = "academic"
 enableEmoji = true
@@ -56,8 +56,7 @@ enableGitInfo = true
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Department of Psychology, University of Notre Dame",
-    url = "http://psychology.nd.edu/" } ]
+  organizations = [ { name = "Department of Psychology, University of Notre Dame", url = "http://psychology.nd.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "my-portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
