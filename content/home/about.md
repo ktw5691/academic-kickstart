@@ -1,11 +1,10 @@
 +++
 # About/Biography widget.
-widget = "about"
-active = true
-date = 2018-10-30T00:00:00
+widget = "about" # Do not modify
+active = true # Activate this widget? true/false
+weight = 5 # Order that this section will appear in.
 
-# Order that this section will appear in.
-weight = 5
+title = "Biography"
 
 # List your academic interests.
 [interests]
@@ -33,7 +32,7 @@ weight = 5
   course = "BS in Psychology"
   institution = "Rochester Institute of Technology"
   year = 2013
- 
+
 +++
 
 # Biography

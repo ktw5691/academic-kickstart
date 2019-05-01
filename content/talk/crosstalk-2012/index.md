@@ -1,6 +1,6 @@
 +++
 title = "Predicting and preventing participant crosstalk: A multi-institutional investigation"
-date = "2018-11-01T00:00:00" # Schedule page publish date
+publishDate = "2018-11-01T00:00:00" # Schedule page publish date
 draft = false
 
 # Talk start and end times.
@@ -14,7 +14,7 @@ authors = ["AL Nichols", "JE Edlund", "BM Okdie", "RE Guadagno", "CA Eno", "JD H
 
 # Abstract and optional shortened version.
 abstract = ""
-abstract_short = ""
+summary = ""
 
 # Name of event and optional event URL.
 event = "Second International Conference on Emerging Research Paradigms in Business and Social Sciences"

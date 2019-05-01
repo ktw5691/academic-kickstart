@@ -1,6 +1,6 @@
 +++
 title = "Visual discrimination of rotated 3D objects in goldfish (Carassius auratus)"
-date = "2018-11-01T00:00:00"
+publishDate = "2018-11-01T00:00:00"
 draft = false
 
 # Talk start and end times.
@@ -13,7 +13,7 @@ authors = ["CM DeLong", "K Gardner", "H Rachfal", "E Morrison", "KT Wilcox"]
 
 # Abstract and optional shortened version.
 abstract = ""
-abstract_short = ""
+summary = ""
 
 event = "25th Annual International Conference on Comparative Cognition"
 event_url = ""

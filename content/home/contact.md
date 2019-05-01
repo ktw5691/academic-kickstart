@@ -1,8 +1,7 @@
 +++
 # Contact widget.
-widget = "contact"
-active = true
-date = 2018-10-30T00:00:00
+widget = "contact" # Do not modify
+active = true # Activate this widget? true/false
 
 title = "Contact"
 subtitle = ""
@@ -18,5 +17,4 @@ autolink = true
 #   1: Netlify (requires that the site is hosted by Netlify)
 #   2: formspree.io
 email_form = 1
-
 +++
