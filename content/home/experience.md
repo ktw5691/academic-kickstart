@@ -3,6 +3,8 @@
 widget = "experience"  # Do not modify this line!
 active = false  # Activate this widget? true/false
 
+headless = true
+
 title = "Experience"
 subtitle = ""
 
@@ -27,7 +29,7 @@ date_format = "January 2006"
   date_end = ""
   description = """
   Responsibilities include:
-  
+
   * Analysing
   * Modelling
   * Deploying

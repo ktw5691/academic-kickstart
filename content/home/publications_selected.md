@@ -6,6 +6,8 @@ widget = "publications_featured"
 active = true
 date = 2016-04-20T00:00:00
 
+headless = true
+
 title = "Selected Publications"
 subtitle = ""
 

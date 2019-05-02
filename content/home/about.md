@@ -4,6 +4,8 @@ widget = "about" # Do not modify
 active = true # Activate this widget? true/false
 weight = 5 # Order that this section will appear in.
 
+headless = true
+
 title = "Biography"
 
 # List your academic interests.

@@ -3,6 +3,8 @@
 widget = "contact" # Do not modify
 active = true # Activate this widget? true/false
 
+headless = true
+
 title = "Contact"
 subtitle = ""
 

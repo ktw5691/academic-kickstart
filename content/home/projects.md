@@ -3,6 +3,8 @@
 widget = "portfolio"  # Do not modify this line!
 active = true  # Activate this widget? true/false
 
+headless = true
+
 title = "Projects"
 subtitle = ""
 
@@ -33,7 +35,7 @@ weight = 50
   [[content.filter_button]]
     name = "Comparative Cognition and Perception"
     tag = ".comparative-cognition"
-    
+
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "2"
