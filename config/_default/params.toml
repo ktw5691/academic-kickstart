@@ -63,10 +63,9 @@ office_hours = ""
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/KTylerWilcox"},
-  {icon = "google-scholar", icon_pack = "ai", link = "https://scholar.google.com/citations?user=GllwRa8AAAAJ&hl"},
-  {icon = "researchgate", icon_pack = "fab", link = "https://www.researchgate.net/profile/Kenneth_Wilcox"},
-  {icon = "github", icon_pack = "fab", link = "https://github.com/ktw5691"},
+  {icon = "google-scholar", icon_pack = "ai", name = "Google Scholar", link = "https://scholar.google.com/citations?user=GllwRa8AAAAJ&hl"},
+  {icon = "researchgate", icon_pack = "fab", name = "ResearchGate", link = "https://www.researchgate.net/profile/Kenneth_Wilcox"},
+  {icon = "github", icon_pack = "fab", name = "Github", link = "https://github.com/ktw5691"},
 #  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
 #  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
 #  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},

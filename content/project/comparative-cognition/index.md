@@ -13,7 +13,7 @@ summary = "Comparative cognition research in humans, dolphins, river otters, pen
 tags = ["comparative cognition", "perception", "dolphins", "penguins", "goldfish"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://www.rit.edu/delonglab/"
+#external_link = "https://www.rit.edu/delonglab/"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your project's folder.
