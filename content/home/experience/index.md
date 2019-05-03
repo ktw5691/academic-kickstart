@@ -1,9 +1,8 @@
 +++
 # Experience widget.
 widget = "experience"  # Do not modify this line!
+headless = true  # This file represents a page section.
 active = false  # Activate this widget? true/false
-
-headless = true
 
 title = "Experience"
 subtitle = ""

@@ -3,10 +3,9 @@
 # An example of using the custom widget to create your own homepage section.
 # To create more sections, duplicate this file and edit the values below as desired.
 widget = "custom"
+headless = true  # This file represents a page section.
 active = true
 date = 2018-10-30T00:00:00
-
-headless = true
 
 # Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
 title = "Teaching"

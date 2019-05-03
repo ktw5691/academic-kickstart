@@ -1,9 +1,8 @@
 +++
 # Portfolio widget.
 widget = "portfolio"  # Do not modify this line!
+headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-
-headless = true
 
 title = "Projects"
 subtitle = ""

@@ -1,9 +1,8 @@
 +++
 # Contact widget.
 widget = "contact" # Do not modify
+headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
-
-headless = true
 
 title = "Contact"
 subtitle = ""

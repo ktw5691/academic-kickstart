@@ -1,10 +1,9 @@
 +++
 # Selected Talks widget.
 widget = "talks_featured"
+headless = true  # This file represents a page section.
 active = false
 date = 2016-04-20T00:00:00
-
-headless = true
 
 title = "Selected Talks"
 subtitle = ""

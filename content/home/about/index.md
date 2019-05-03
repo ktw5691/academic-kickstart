@@ -1,10 +1,13 @@
 +++
 # About/Biography widget.
 widget = "about" # Do not modify
+headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
 weight = 5 # Order that this section will appear in.
 
-headless = true
+# Choose the user profile to display
+# This should be the username of a profile in your `content/author/` folder.
+author = "admin"
 
 title = "Biography"
 
