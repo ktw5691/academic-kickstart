@@ -1,6 +1,6 @@
 +++
 title = "Visual discrimination of rotated 3D objects in goldfish (Carassius auratus)"
-publishDate = "2018-11-01T00:00:00"
+publishDate = "2018-04-01T00:00:00"
 draft = false
 
 # Talk start and end times.

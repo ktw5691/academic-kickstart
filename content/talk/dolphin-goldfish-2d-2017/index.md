@@ -2,7 +2,7 @@
 title = "Visual discrimination of rotated 2D objects in a bottlenose dolphin (Tursiops truncatus) and goldfish (Carassius auratus)"
 
 # Schedule page publish date (NOT talk date).
-publishDate = "2018-11-01T00:00:00"
+publishDate = "2017-11-01T00:00:00"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

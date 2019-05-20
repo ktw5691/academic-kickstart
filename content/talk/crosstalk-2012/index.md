@@ -1,6 +1,6 @@
 +++
 title = "Predicting and preventing participant crosstalk: A multi-institutional investigation"
-publishDate = "2018-11-01T00:00:00" # Schedule page publish date
+publishDate = "2013-11-01T00:00:00" # Schedule page publish date
 draft = false
 
 # Talk start and end times.

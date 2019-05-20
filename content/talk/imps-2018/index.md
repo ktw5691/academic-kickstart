@@ -1,6 +1,6 @@
 +++
 title = "A Bayesian hidden topic Markov model for latent linguistic structure"
-publishDate = "2018-11-01T00:00:00"
+publishDate = "2018-07-01T00:00:00"
 draft = false
 
 # Talk start and end times.
