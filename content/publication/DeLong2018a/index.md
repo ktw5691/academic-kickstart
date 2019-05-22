@@ -1,6 +1,6 @@
 +++
 title = "North American river otters (Lontra canadensis) discriminate between 2D objects varying in shape and color"
-date = 2018-01-01
+date = 2019-03-01
 draft = false
 
 authors = ["Caroline M. DeLong", "Catina Wright", "Irene Fobe", "Kenneth Tyler Wilcox", "Evan Morrison"]
