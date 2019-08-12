@@ -8,7 +8,7 @@ color_theme = "default"
 day_night = true
 
 # Font style.
-#   Choose from `default`, `classic`, or `playfair`.
+#   Choose from `default` or `classic`.
 font = "default"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
@@ -18,7 +18,7 @@ description = "Personal website of Kenneth Tyler Wilcox"
 sharing_image = "my-portrait.png"
 
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
-twitter = "KTylerWilcox"
+twitter = ""
 
 # Diplay a logo in navigation bar rather than title (optional).
 #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
