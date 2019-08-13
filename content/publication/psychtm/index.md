@@ -1,6 +1,6 @@
 +++
 title = "psychtm: Text mining for psychological research"
-date = 2019-05-29
+date = 2019-08-12
 draft = false
 
 authors = ["Kenneth Tyler Wilcox"]
@@ -16,7 +16,7 @@ authors = ["Kenneth Tyler Wilcox"]
 # 8 = Patent (v4.2+ required)
 publication_types = ["0"]
 
-#abstract = ""
+abstract = "Supports Bayesian estimation of supervised (sLDAX) and unsupervised (LDA) topic models."
 summary = "Supports Bayesian estimation of supervised (sLDAX) and unsupervised (LDA) topic models."
 
 featured = true

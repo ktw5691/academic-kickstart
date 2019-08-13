@@ -3,7 +3,7 @@
 
 # Color theme.
 #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `rose`, `strawberry`, `mr_robot`.
-color_theme = "default"
+color_theme = "mr_robot"
 # Enable users to switch between day and night mode?
 day_night = true
 
@@ -46,6 +46,7 @@ privacy_pack = false
 # Enable visitors to edit pages?
 # `repo` defines the repository URL. `editable` defines which page types can be edited.
 #edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", repo_branch = "master", editable = {docs = true, page = false, post = false}}
+edit_page = {repo_url = "https://github.com/ktw5691/academic-kickstart", repo_branch = "master", editable = {docs = false, page = false, post = false}}
 
 # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
 #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -148,8 +149,8 @@ sharing = true
   #   3: Card
   #   4: Citation (publications only)
   post_view = 2
-  publication_view = 2
-  talk_view = 2
+  publication_view = 4
+  talk_view = 4
 
 # Comments.
 [comments]
