@@ -16,7 +16,15 @@ weight = 60
 
 +++
 
-I served as a graduate teaching assistant for the following courses at the Rochester Institute of Technology:
+# University of Notre Dame
+
+## *Teaching assistant* (2019-)
+
+- PSY60100: Quantitative Methods I (graduate course)
+
+# Rochester Institute of Technology
+
+## *Teaching assistant* (2014-2017)
 
 - STAT-731: Elements of statistical theory (graduate course)
 - STAT-747: Principles of statistical data mining (graduate course)
