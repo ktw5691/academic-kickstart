@@ -23,10 +23,10 @@ title = "Biography"
   ]
 
 # List your qualifications (such as academic degrees).
-[[education.courses]]
-  course = "PhD in Quantitative Psychology"
-  institution = "University of Notre Dame"
-  year = 2022
+# [[education.courses]]
+#   course = "PhD in Quantitative Psychology"
+#   institution = "University of Notre Dame"
+#   year = 2022
 
 [[education.courses]]
   course = "MS in Applied Statistics"
