@@ -1,20 +1,21 @@
 +++
-# A Recent Publications section created with the Pages widget.
-# This section displays recent blog posts from `content/publication/`.widget = "publications"
-headless = true  # This file represents a page section.
+# A Recent and Upcoming Talks section created with the Pages widget.
+# This section displays recent talks from `content/talk/`.
 
 widget = "pages"  # Do not modify this line!
-active = true  # Activate this widget? true/false
+headless = true  # This file represents a page section.
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/falsedate = 2018-10-30T00:00:00
 
-title = "Recent Publications"
+title = "Talks"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 20
+weight = 30
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "publication"
+  page_type = "talk"
 
   # Choose how much pages you would like to display (0 = all pages)
   count = 5
@@ -31,6 +32,8 @@ weight = 20
     category = ""
     publication_type = ""
     exclude_featured = false
+    exclude_past = false
+    exclude_future = false
 
 [design]
   # Toggle between the various page layout types.
@@ -67,7 +70,3 @@ weight = 20
  # CSS class.
  css_class = ""
 +++
-
-{{% alert note %}}
-Quickly discover relevant content by [filtering publications]({{< ref "/publication/_index.md" >}}).
-{{% /alert %}}

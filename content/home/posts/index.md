@@ -1,20 +1,19 @@
 +++
-# A Recent and Upcoming Talks section created with the Pages widget.
-# This section displays recent talks from `content/talk/`.
+# A Recent Blog Posts section created with the Pages widget.
+# This section displays recent blog posts from `content/post/`.
 
-widget = "pages"  # Do not modify this line!
+widget = "posts" # Do not modify this line!
 headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/falsedate = 2018-10-30T00:00:00
+headless = true  # This file represents a page section.
+active = false # Activate this widget? true/false
+weight = 40 # Order that this section will appear in.
 
-title = "Talks"
+title = "Recent Posts"
 subtitle = ""
-
-# Order that this section will appear in.
-weight = 30
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "talk"
+  page_type = "post"
 
   # Choose how much pages you would like to display (0 = all pages)
   count = 5
@@ -31,8 +30,6 @@ weight = 30
     category = ""
     publication_type = ""
     exclude_featured = false
-    exclude_past = false
-    exclude_future = false
 
 [design]
   # Toggle between the various page layout types.

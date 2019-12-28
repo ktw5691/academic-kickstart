@@ -4,6 +4,7 @@
 # To create more sections, duplicate this file and edit the values below as desired.
 widget = "custom"
 headless = true  # This file represents a page section.
+headless = true  # This file represents a page section.
 active = true
 date = 2018-10-30T00:00:00
 
