@@ -5,7 +5,6 @@
 
 widget = "featured"  # Do not modify this line!
 headless = true  # This file represents a page section.
-headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 15  # Order that this section will appear.
 

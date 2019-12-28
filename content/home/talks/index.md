@@ -4,7 +4,6 @@
 
 widget = "pages"  # Do not modify this line!
 headless = true  # This file represents a page section.
-headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/falsedate = 2018-10-30T00:00:00
 
 title = "Talks"
