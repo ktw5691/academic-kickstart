@@ -2,15 +2,13 @@
 # A Recent and Upcoming Talks section created with the Pages widget.
 # This section displays recent talks from `content/talk/`.
 
-widget = "pages"  # Do not modify this line!
+widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/falsedate = 2018-10-30T00:00:00
+weight = 30  # Order that this section will appear in.
 
 title = "Talks"
 subtitle = ""
-
-# Order that this section will appear in.
-weight = 30
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -50,22 +48,22 @@ weight = 30
 
   # Background color.
   # color = "navy"
-
+  
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
   # gradient_end = "SkyBlue"
-
+  
   # Background image.
   # image = "background.jpg"  # Name of image in `static/img/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
-  # text_color_light = true
-
+  # text_color_light = true  
+  
 [advanced]
- # Custom CSS.
+ # Custom CSS. 
  css_style = ""
-
+ 
  # CSS class.
  css_class = ""
 +++
