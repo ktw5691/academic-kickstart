@@ -1,50 +1,63 @@
-+++
-title = "psychtm: Text mining for psychological research"
-date = 2019-08-12
-draft = false
+---
+title: "psychtm: Text mining for psychological research"
+authors:
+- admin
+date: "2019-08-12"
+doi: ""
 
-authors = ["Kenneth Tyler Wilcox"]
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: ["0"]
 
-# 0 = Uncategorized
-# 1 = Conference paper
-# 2 = Journal article
-# 3 = Preprint / Working Paper
-# 4 = Report
-# 5 = Book
-# 6 = Book section
-# 7 = Thesis (v4.2+ required)
-# 8 = Patent (v4.2+ required)
-publication_types = ["0"]
+# Publication name and optional abbreviated publication name.
+publication: ""
+publication_short: ""
 
-abstract = "Supports Bayesian estimation of supervised (sLDAX) and unsupervised (LDA) topic models."
-summary = "Supports Bayesian estimation of supervised (sLDAX) and unsupervised (LDA) topic models."
+abstract: Supports Bayesian estimation of supervised (sLDAX) and unsupervised (LDA) topic models.
 
-featured = true
-#publication = ""
-tags = ["software", "R package", "text mining", "topic model"]
-#doi = ""
+# Summary. An optional shortened abstract.
+summary: ""
 
-#url_pdf = ""
-# url_preprint = "http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf"
-url_code = "https://github.com/ktw5691/psychtm/"
-# url_dataset = "#"
-# url_project = "#"
-# url_slides = "#"
-# url_video = "#"
-# url_poster = "#"
-# url_source = "#"
+tags:
+- software
+- R package
+- text mining
+- topic model
+featured: true
 
-projects = ["topic-model"]
-
-math = false
+# links:
+# - name: ""
+#   url: ""
+url_pdf: ''
+url_code: "https://github.com/ktw5691/psychtm/"
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: ''
+url_source: ''
+url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-[image]
-  # Caption (optional)
-  caption = "SLDAX Model"
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: 'SLDAX model.'
+  focal_point: "Center"  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+  preview_only: false
 
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Center"
-+++
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects:
+- topic-model
+
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides: "example"` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: ""`.
+slides: ""
+---

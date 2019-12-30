@@ -1,28 +1,16 @@
-+++
-# Project title.
-title = "Topic Modeling"
-
-# Date this page was created.
-date = 2018-11-02T00:00:00
-
-# Project summary to display on homepage.
-summary = "Extensions of topic modeling."
-
-# Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["topic model", "text mining"]
+---
+title: Topic Modeling
+summary: Extensions of topic modeling.
+tags:
+- topic modeling
+- text mining
+date: "2016-08-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_link: ""
 
-# Featured image
 # To use, add an image named `featured.jpg/png` to your project's folder.
-[image]
-  # Caption (optional)
-  caption = ""
-
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Smart"
-
-+++
+image:
+  caption: ""
+  focal_point: Smart # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+---
