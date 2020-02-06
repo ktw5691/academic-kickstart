@@ -4,7 +4,7 @@ authors:
 - admin
 - Ross Jacobucci
 - Zhiyong Zhang
-date: "2019-12-02"
+date: "2020-02-06"
 doi: 10.1080/00273171.2019.1695568
 
 # Schedule page publish date (NOT publication's date).
@@ -24,10 +24,11 @@ abstract: ""
 summary: ""
 
 tags:
+- SLDAX
 - topic modeling
-- Bayesian
 - text mining
-- Gibbs sampler
+- Bayesian
+
 featured: true
 
 # links:
