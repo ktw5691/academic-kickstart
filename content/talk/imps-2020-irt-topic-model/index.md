@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 
 title: A joint modeling framework for item response and topic models
 event: 2020 International Meeting of the Psychometric Society
@@ -19,11 +19,11 @@ abstract: "Topic modeling has become a widely used approach when analyzing const
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: "2020-07-14"
-# date_end: "2030-06-01T15:00:00Z"
+date_end: "2020-07-17"
 all_day: true
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2020-04-01T00:00:00Z"
+publishDate: "2020-03-16T00:00:00Z"
 
 authors:
 - Maxwell Hong
