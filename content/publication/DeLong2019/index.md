@@ -19,7 +19,7 @@ publishDate: "2019-03-01T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Learning & Behavior, 47*(1), 91-104"
+publication: "*Learning & Behavior*, *47*(1), 91--104"
 publication_short: ""
 
 abstract: We investigated the ability of North American river otters (Lontra canadensis) to visually discriminate between 2D objects. The otters learned to discriminate between stimuli using multiple visual features and then were tested with stimuli in which one of the features was eliminated (color or shape). Two adult otters were trained in a two-alternative forced choice task to discriminate between a red circle and a blue triangle. Test sessions included probe trials containing novel shapes, colors, or shape-color combinations. Both otters successfully learned to discriminate between stimuli varying in multiple features. One of the otters was able to successfully discriminate between novel test stimuli when either color or shape were eliminated as salient features. This study was the first to explore the ability of L. canadensis to use different visual features to recognize objects and provides some preliminary evidence for color vision in this species. This research adds to the sparse literature on perceptual and cognitive capabilities in otters and can be used to support future conservation efforts for this species.
@@ -32,7 +32,7 @@ tags:
 - otter
 - visual perception
 - Lontra canadensis
-featured: true
+featured: false
 
 # links:
 # - name: ""

@@ -18,7 +18,7 @@ publishDate: "2017-08-01T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Behavioural Processes, 141*(2), 172-183"
+publication: "*Behavioural Processes*, *141*(2), 172--183"
 publication_short: ""
 
 abstract: Previous studies on relative quantity discrimination in birds and mammals with training procedures have employed hundreds or thousands of trials whereas studies with fish typically use dozens of trials. The goal of this study was to examine whether more extensive training improves the performance of fish tested on stimuli in the small (textless4) and large (textgreater4) number range. Goldfish were trained with dot array stimuli using the ratio 0.5 (2 vs. 4, 6 vs. 12) across two blocks of training sessions with a total of approximately 1200 trials. They were tested after each block of training sessions with the ratios 0.33 (1 vs. 3, 5 vs. 15), 0.5 (2 vs. 4, 6 vs. 12), and 0.67 (2 vs. 3, 10 vs. 15). Performance exceeded 90% correct on both test blocks. Accuracy was not affected by manipulating the surface area, density, or space of stimuli. Performance was best on the ratio 0.5 in test block 1, but ratio-independent in test block 2. There was no difference in performance in the small vs. large number range across the study. These results suggest that fish given extensive training can achieve accuracy on a numerical task comparable to well-trained birds, humans, or non-human primates.

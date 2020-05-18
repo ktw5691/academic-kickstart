@@ -18,7 +18,7 @@ organizations:
   url: http://psychology.nd.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Bayesian statistics, multilevel modeling, latent variable modeling, integrative data analysis, replicable research, topic modeling, statistical programming, and cognition.
+bio: My research interests include Bayesian statistics, multilevel modeling, integrative data analysis, topic modeling, statistical programming, and cognition.
 
 interests:
 - Integrative data analysis
@@ -43,6 +43,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0003-3969-0427
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=GllwRa8AAAAJ&hl
@@ -63,9 +66,9 @@ email: kwilcox3@nd.edu
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+# user_groups:
+# - Researchers
+# - Visitors
 ---
 
 Kenneth Tyler Wilcox is a graduate student in Quantitative Psychology at the University of Notre Dame. His research interests include Bayesian statistics, multilevel modeling, latent variable modeling, integrative data analysis, reproducible research, topic modeling, statistical programming, and cognition. He is a graduate student working with Dr. Lijuan (Peggy) Wang in the [Lab for Developmental and Health Methodology](https://ldhrm.nd.edu) on integrative data analysis and longitudinal data analysis. He collaborates with the [Comparative Cognition and Perception Lab](https://www.rit.edu/delonglab/).

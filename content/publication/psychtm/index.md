@@ -2,7 +2,7 @@
 title: "psychtm: Text mining for psychological research"
 authors:
 - admin
-date: "2019-08-12"
+date: "2020-02-10"
 doi: ""
 
 # Publication type.
@@ -18,7 +18,7 @@ publication_short: ""
 abstract: Supports Bayesian estimation of supervised (sLDAX) and unsupervised (LDA) topic models.
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "v2020.3"
 
 tags:
 - software
@@ -52,7 +52,9 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- topic-model
+- topic model
+- SLDAX
+- text mining
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
