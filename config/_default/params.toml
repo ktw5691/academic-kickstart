@@ -58,7 +58,7 @@ highlight_style = "github"  # For supported styles, see https://cdnjs.com/librar
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
-math = false
+math = true
 
 # Enable diagram rendering? true/false
 #   If false, you can enable diagrams on a per page basis as needed.
@@ -110,10 +110,11 @@ contact_links = [
   {icon = "google-scholar", icon_pack = "ai", name = "Google Scholar", link = "https://scholar.google.com/citations?user=GllwRa8AAAAJ&hl"},
   {icon = "researchgate", icon_pack = "fab", name = "ResearchGate", link = "https://www.researchgate.net/profile/Kenneth_Wilcox"},
   {icon = "github", icon_pack = "fab", name = "Github", link = "https://github.com/ktw5691"},
+  {icon = "orcid", icon_pack = "ai", name = "ORCiD", link = "https://orcid.org/0000-0003-3969-0427"}
 #  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
 #  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
 #  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
-#  {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
+#  {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"}
   ]
 
 ############################
@@ -143,9 +144,6 @@ address_format = "en-us"
 ## Advanced
 ############################
 
-# Get user avatars from Gravatar.com? (true/false)
-gravatar = false
-
 # Main menu alignment (l = left, c = center, r = right) and logo options.
 main_menu = {align = "l", show_logo = true}
 
@@ -153,7 +151,7 @@ main_menu = {align = "l", show_logo = true}
 reading_time = false
 
 # Display next/previous section pager? (true/false)
-section_pager = false
+section_pager = true
 docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
 
 # Enable in-built social sharing buttons? (true/false)
@@ -162,9 +160,23 @@ sharing = true
 # Link authors to their profile page? (true/false)
 link_authors = true
 
+# Show profile cards for all page authors, not just 1st author (true/false)
+#   (assuming that a profile has been setup for them under content/authors/)
+profile = true
+
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
 plugins_js  = []
+
+# Avatars.
+# An avatar is an image that appears next to a user's name.
+# An avatar can be uploaded as an image named `avatar` to each user's profile or fetched from Gravatar.com.
+[avatar]
+  # Get user avatars from Gravatar.com? (true/false)
+  gravatar = false
+
+  # Choose a shape for avatar images. Options: circle, square.
+  shape = "circle"
 
 # Available address formats.
 [address_formats]
