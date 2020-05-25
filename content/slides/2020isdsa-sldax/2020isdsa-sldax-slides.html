@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Modeling relationships from themes in text and covariates with an outcome</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kenneth Tyler Wilcox" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="libs/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: top, center, inverse, title-slide
+
+# Modeling relationships from themes in text and covariates with an outcome
+## A Bayesian supervised topic model with covariates
+### Kenneth Tyler Wilcox
+### Department of Psychology, University of Notre Dame
+### 2020/05/26
+
+---
+
+
+
+
+
+
+
+
+
+
+# Text Data in Psychology
++ Text is an increasingly popular data source
+  + Social media (Schwartz et al., 2013)
+  + Open-ended questions (Popping, 2015)
+  + Medical health records (Obeid et al., 2019)
+
++ Various overviews exist on existing text mining algorithms for psychological research (Finch et al., 2018; Iliev et al., 2015; Kjell et al., 2019; Rohrer et al., 2017)
+
++ These algorithms are often designed for massive data sets uncommon in psychology
+
++ Current challenge is to adapt these algorithms to psychological research
+
+---
+
+# Modeling Text as Data
+
+.pull-left[
+## Top Down
++ Dictionary methods
+  + LIWC (Tausczik et al., 2010)
+  + Sentiment analysis
++ Usable (in theory) with any data
+
++ Dictionaries may not be valid for given data
+]
+.pull-right[
+## Bottom Up
++ Qualitative analysis
+  + Considered the gold standard
+  + Time-consuming and expensive
+  + Cannot be easily applied to new data
++ Quantitative models
+  + More complex
+  + Faster and cheaper
+  + Reusable with new data
+]
+
+???
+
++ Let the data speak
++ Model-based dictionaries and models
+  + Matrix factorization [@Deerwester1990; @Kjell2019]
+  + Neural networks [@Deng2018]
+  + Topic models [LDA; @Blei2003; @Rohrer2017]
+
+---
+
+class: center
+
+# Topic Modeling
+
+![:scale 100%](figures/lda-graphical-model.png)
+
+---
+
+# Latent Dirichlet Allocation (LDA)
+
+.pull-left[
+Seminal topic model (Blei et al., 2003)
+![:scale 100%](figures/lda-graphical-model.png)
+`$$L(\vec{\Theta}, \vec{B}) = \prod_{d=1}^D \prod_{n=1}^{N_d} \beta_{z_{dn}, w_{dn}} \theta_{d, z_{dn}}$$`
+]
+.pull-right[
+Topics: `\(\vec{\beta}_k = \text{Pr}\left[ w_{dn} = m | z_{dn} = k \right]\)`
+`\(\vec{\beta}_k \sim \text{Dir}(\vec{\gamma})\)`
+
+Topic proportions: `\(\vec{\theta}_d = \text{Pr}\left[ z_{dn} = k \right]\)`
+`\(\vec{\theta}_d \sim \text{Dir}(\vec{\alpha})\)`
+
+Topic assignments: `\(\left(z_{dn} | \vec{\theta}_d\right) \sim \text{Cat}(\vec{\theta}_d)\)`
+
+Words: `\(\left(w_{dn} | z_{dn} = k, \vec{\beta}_k\right) \sim \text{Cat}(\vec{\beta}_k)\)`
+]
+
+???
+
++ Represent corpus with probability model of K topics and common vocabulary
+  + Let each doc. have its own topic proportions
++ Computationally easier to estimate due to conditional independence assumptions
++ More complex dependency structures exist (CTM, HTMM) but harder to fit
++ Can be readily extended to more complex models
+
+---
+
+# Fusing Topic Models and Regression
+
+![:scale 80%](figures/sLDAX-conceptual2.png)
++ Two-stage approach (Packard et al., 2020; Rohrer et al., 2017)
+    + Use estimated `\(\vec{\Theta}\)` to predict `\(Y\)`
+    + Could include other manifest predictors `\(\vec{X}\)`
++ One-stage approach
+    + Supervised topic model (SLDA; Blei et al., 2010)
+    + Does not include `\(\vec{X}\)`
++ We propose the SLDAX model
+  + One-stage approach
+  + Allow topics and manifest predictors of `\(Y\)`
+
+???
+
++ Analogous to estimated factors scores vs. SEM
++ Will show by simulation that one-stage approach is needed
+  + Major estimation bias with two-stage
++ For topics as outcomes, see structural topic model (Roberts et al., 2016)
+
+---
+
+# SLDAX
+
+![:scale 100%](figures/sldax-graphical-model.png)
+
+---
+
+# Gibbs Sampler for `\(Y | \cdot \sim \text{N}(\cdot)\)`
+
++ `\(f\left(z_{d,n} = k | \cdot\right) \propto \exp\left\{ -\frac{1}{2\sigma^2} \left(y_d - \left(\vec{\bar{z}}_d, \vec{x}_d\right)' \vec{\eta} \right)^2\right\} \times\)`
+   `\(\hspace{67pt}\left(n_{dk}^{(-n)} + \alpha\right) \left(\frac{n_{kv}^{(-n)} + \gamma}{n_{k}^{(-n)} + V\gamma}\right)\)`
++ `\(f\left(\sigma^2 | \cdot\right) = \text{IG}\left(\frac{a_0 + D}{2}, \frac{1}{2} \left( b_0 + \sum_d \left[y_d - \left(\vec{\bar{z}}_d, \vec{x}_d\right)' \vec{\eta} \right]^2 \right) \right)\)`
++ `\(f\left(\vec{\eta} | \cdot\right) = \text{N}\left(\vec{\eta}_1, \vec{\Sigma}_1 \right)\)`
+    + `\(\vec{\Sigma}_1 = \left( \vec{\Sigma}_0^{-1} + \sigma^{-2} \left(\vec{\bar{Z}}, \vec{X}\right)' \left(\vec{\bar{Z}}, \vec{X}\right) \right)^{-1}\)`
+    + `\(\vec{\eta}_1 = \vec{\Sigma}_1 \left( \vec{\Sigma}_0^{-1} \vec{\mu}_0 + \sigma^{-2} \left(\vec{\bar{Z}}, \vec{X}\right)' \vec{y} \right)\)`
+
+???
+
++ Label switching handled by (Stephens, 2000)
+
+---
+
+# MH-in-Gibbs for `\(Y | \cdot \sim \text{Ber}(\cdot)\)`
+
++ `\(f\left(z_{dn} = k | \cdot \right) \propto \frac{\exp \left\{ y_d \left(\vec{\bar{z}}_d, \vec{x}_d\right)' \vec{\eta} \right\}} { 1 + \exp \left\{ \left(\vec{\bar{z}}_d, \vec{x}_d\right)' \vec{\eta} \right\}} \left(n_{dk}^{(-n)} + \alpha\right) \left(\frac{n_{kv}^{(-n)} + \gamma}{n_{k}^{(-n)} + V\gamma}\right)\)`
++ `\(f\left(\vec{\eta} | \cdot\right) \propto \prod_d \left[ \frac{\exp \left\{ y_d \left(\vec{\bar{z}}_d, \vec{x}_d\right)' \vec{\eta} \right\}} { 1 + \exp \left\{ \left(\vec{\bar{z}}_d, \vec{x}_d\right)' \vec{\eta} \right\}} \right] \times\)`
+   `\(\hspace{40pt} \exp\left\{-\frac{1}{2} \left( \vec{\eta} - \vec{\mu}_0 \right)' \vec{\Sigma}_0^{-1} \left( \vec{\eta} - \vec{\mu}_0 \right) \right\}\)`
+  + Use Metropolis-Hastings algorithm to sample
+  + Independent proposal distributions
+      + `\(\eta_j \sim \text{N}\left(\mu_j, \tau_j \right)\)`
+      + Tune `\(\tau_j\)` during burn-in
+
+???
+
++ `\(\tau_j^{(0)}\)` = 2.38 based on (Roberts et al., 1997) yields AR `\(\approx\)` 0.24
++ Could use t-dist. proposals
+
+---
+
+# Software
++ `psychtm` R package in early development (not quite user-friendly yet)
+
++ Features
+  + LDA, SLDA, SLDAX MCMC algorithms implemented in `C++`
+      + Normal and dichotomous outcomes supported
+  + Estimation and visualization of `\(\vec{\Theta}\)` and `\(\vec{B}\)`
+  + Model selection by WAIC (Watanabe, 2010)
+
++ [Available from Github <i class="fab  fa-github "></i>](https://github.com/ktw5691/psychtm)
+
+
+```r
+devtools::install_github("ktw5691/psychtm")
+```
+
+---
+
+# Simulation Study
+## Goal
++ Compare SLDAX with two-stage approach (LDA + OLS regression)
+  + SLDAX from our R package [`psychtm`](https://github.com/ktw5691/psychtm)
+  + LDA model from R package `topicmodels`
++ Conditions
+  + \# topics `\(K\)`: 2 and 5
+  + \# documents `\(D\)`: 200, 800, and 1500
+  + Mean \# words `\(\bar{N}_d\)`: 15, 80, and 150
+  + Vocabulary `\(V\)`: 500 and 1000
+
+---
+
+# Simulation Study
+## Data Generation
++ SLDAX model
+  + One manifest predictor `\(X \sim \text{N}(0, 1)\)`
+  + Outcome `\(Y \sim \text{N}(\cdot)\)`
++ Regression coefficient for `\(X\)` had partial `\(R^2\)` = .15
++ Topic regression coefficients had joint partial `\(R^2\)` = .35
+
+## Estimation
++ SLDAX with flat priors
++ LDA with same hyper-parameters
+  + Estimated by Blei et al.'s (2003) variational EM algorithm
+  + OLS regression
+
+???
+
++ SLDAX MCMC
+  + Posterior sample of 3000
+  + Burn in of of 5000
+  + Thinning period of 10
+  + Convergence rates for SLDAX averaged 90\% using Geweke statistic
++ VEM
+  + 500 E-step max
+  + 1000 M-step max
+  + Tolerance of E-6 in log-likelihood
+
+---
+
+# Two-Stage Estimation Bias for `\(\eta_{\bar{z}}\)`
+
+
+
+&lt;img src="2020isdsa-sldax-slides_files/figure-html/unnamed-chunk-3-1.png" width="800" /&gt;
+
+???
+
++ Bias for topic coefs. gets worse with more data!
+  + Worse with more topics / complex model
++ Bias of X coef. was ignorable in all conditions
++ Same results using Gibbs instead of VEM
+
+---
+
+# SLDAX Estimation Bias for `\(\eta_{\bar{z}}\)`
+
+
+
+&lt;img src="2020isdsa-sldax-slides_files/figure-html/unnamed-chunk-5-1.png" width="800" /&gt;
+
+???
+
++ Longer documents most important
+  + Worse with more topics / complex model
++ Shrinkage
++ Bias of X coef. was ignorable in all conditions
+
+---
+
+# Bias: Two-Stage vs. SLDAX
+
+
+
+&lt;img src="2020isdsa-sldax-slides_files/figure-html/unnamed-chunk-7-1.png" width="800" /&gt;
+
+---
+
+# Illustrative Example
+
++ 882 adults recruited on MTurk
++ `\(Y\)`: Beck Hopelessness Scale (Beck et al., 1989)
++ Open-ended free response question
+  + "What are your expectations for the future?"
+  + Median response length was 44 words (*M* = 50, *SD* = 24, *Range* = 5 &amp;ndash; 186)
+  + After stopword removal and stemming:
+      + Median length was 18 words (*M* = 21, *SD* = 10, *Range* = 2 &amp;ndash; 76)
+      + Vocabulary of 3096 stems (98% of original vocabulary)
++ Manifest predictors
+  + Depression Anxiety Stress Scales (Lovibond et al., 1995)
+  + Age (*M* = 33, *SD* = 10, *Range* = 18 &amp;ndash; 79)
+
+???
+
++ BHS sum score ($M$ = 9.7, `\(SD\)` = 2.3, Range = 3 &amp;ndash; 20)
++ 3 DASS subscales sum score ($M$ = 16.9, `\(SD\)` = 14.5, Range = 0 &amp;ndash; 63)
++ Relationship of the DASS scores and themes in the future expectations responses with hopelessness
+  + SLDAX model predicting BHS scores with DASS scores and `\(K\)` topics while adjusting for age
+  + BHS, DASS, and age were standardized
+
++ MVN(0, I) prior for manifest `\(\eta\)`
++ MVN prior for topics `\(\eta\)`, we used different prior means for each topic centered around zero to help identify the model
+  + `\(\mu_0 = \left\{-0.5, 0, 0.5 \right\}\)`
+      + A priori average effects of the topics between -5 and 5
++ IG(5, 3) prior for `\(\sigma^2\)`
+  + Prior mean of 0.75 and SD of 0.4
+  + BHS standardized, so `\(\sigma^2 \le 1\)`
++ `\(\theta_d \sim Dir(1)\)`
+  + Flat prior over the `\(K\)`-dimensional simplex
++ `\(\beta_k \sim Dir(1)\)`
++ Results were robust to less informative priors
++ Convergence was evaluated using trace plots and the Geweke (1992) and Heidelberger (1983) statistics
++ Burn-in of 15,000 iterations
++ Total of 22,500 iterations
++ 7,500 posterior samples
++ The posterior samples were permuted using Stephens (2000) label switching algorithm
+
+---
+
+# Regression Estimates
+
+.center[
+
+
+&lt;img src="2020isdsa-sldax-slides_files/figure-html/unnamed-chunk-8-1.png" width="650" /&gt;
+`\(\text{Effect} = \hat{\eta}_k - K^{-1} \sum_{j \ne k}^K \hat{\eta}_j\)`
+]
+
+---
+
+# Topic Estimates
+.center[
+![:scale 75%](figures/emp-ex-bhs-topic-termscore.png)
+]
+
+???
+
++ Topic 1: positive hopes involving family, work, and travel
+  + "find ways to improve my relationships ... help my children learn and grow into good people."
++ Topic 2: general optimism
+  + "my life will get better ... I understand that might be different from what I get."
++ Topic 3: concerns about career, education, home location, and debt
+  + "I look forward to paying off the last of my credit card debt ... I wish to find an apartment and job close to my son's school in the same city."
+  + Associated with higher BHS
+
+---
+
+# Conclusions
++ Hopelessness in responses associated with BHS
+  + Convergent validity for topics
+  + Text topics associated with BHS above and beyond DASS
+
++ Topic effects may be attenuated based on simulation results
+  + Large `\(D\)`, small `\(\bar{N}_d\)`
+
++ Could predict on new data or update model using new data
+
+---
+
+# Discussion
+## Key Findings
++ The popular two-stage approach yields dramatically biased estimates of regression coefficients
++ SLDAX yields much more accurate estimates and provides shrinkage under small-data scenarios
++ We derived MCMC algorithms to estimate SLDAX models
++ We implemented SLDAX models in open-source `R` package
+
+## Future Work
++ SLDAX framework can be generalized
+  + Integration with SEM 
+  + Longitudinal / EMA data
++ Impact of text data quality on performance
+
+---
+
+# Thanks!
+
+.center[
+### <i class="fas  fa-paper-plane "></i> kwilcox3@nd.edu
+### [<i class="ion  ion-earth "></i> ktylerwilcox.netlify.app](https://ktylerwilcox.netlify.app)
+### [<i class="fab  fa-github "></i> @ktw5691](http://github.com/ktw5691)
+### [<i class="fas  fa-link "></i> Slides](https://ktylerwilcox.netlify.app)
+]
+
+---
+
+# References
+
+Beck AT, Brown G, Steer RA (1989). "Prediction of Eventual Suicide in
+Psychiatric Inpatients by Clinical Ratings of Hopelessness." _Journal
+of Consulting and Clinical Psychology_, *57*(2), 309-310.
+https://doi.org/10.1037/0022-006X.57.2.309.
+
+Blei DM, McAuliffe JD (2010). "Supervised Topic Models." _arXiv_.
+
+Blei DM, Ng AY, Jordan MI (2003). "Latent Dirichlet Allocation."
+_Journal of Machine Learning Research_, *3*, 993-1022.
+
+Finch WH, Finch MEH, McIntosh CE, Braun C (2018). "The Use of Topic
+Modeling with Latent Dirichlet Analysis with Open-Ended Survey Items."
+_Translational Issues in Psychological Science_, *4*(4), 403-424.
+https://doi.org/10.1037/tps0000173.
+
+---
+
+Iliev R, Dehghani M, Sagi E (2015). "Automated Text Analysis in
+Psychology: Methods, Applications, and Future Developments." _Language
+and Cognition_, *7*(2), 265-290.
+https://doi.org/10.1017/langcog.2014.30.
+
+Kjell ONE, Kjell K, Garcia D, Sikström S (2019). "Semantic Measures:
+Using Natural Language Processing to Measure, Differentiate, and
+Describe Psychological Constructs." _Psychological Methods_, *24*(1),
+92-115.  https://doi.org/10.1037/met0000191.
+
+Lovibond PF, Lovibond SH (1995). "The Structure of Negative Emotional
+States: Comparison of the Depression Anxiety Stress Scales (DASS) with
+the Beck Depression and Anxiety Inventories." _Behaviour Research and
+Therapy_, *33*(3), 335-343.
+https://doi.org/10.1016/0005-7967(94)00075-U.
+
+---
+
+Obeid JS, Weeda ER, Matuskowitz AJ, Gagnon K, Crawford T, Carr CM, Frey
+LJ (2019). "Automated Detection of Altered Mental Status in Emergency
+Department Clinical Notes: A Deep Learning Approach." _BMC Medical
+Informatics and Decision Making_, *19*(1), 164.
+https://doi.org/10.1186/s12911-019-0894-9.
+
+Packard G, Berger J (2020). "Thinking of You: How Second-Person
+Pronouns Shape Cultural Success." _Psychological Science_.
+https://doi.org/10.1177/0956797620902380.
+
+Popping R (2015). "Analyzing Open-Ended Questions by Means of Text
+Analysis Procedures." _Bulletin of Sociological Methodology/Bulletin de
+Méthodologie Sociologique_, *128*(1), 23-39.
+https://doi.org/10.1177/0759106315597389.
+
+---
+
+Roberts GO, Gelman A, Gilks WR (1997). "Weak Convergence and Optimal
+Scaling of Random Walk Metropolis Algorithms." _Annals of Applied
+Probability_, *7*(1), 110-120.
+https://doi.org/10.1214/aoap/1034625254.
+
+Roberts ME, Stewart BM, Airoldi EM (2016). "A Model of Text for
+Experimentation in the Social Sciences." _Journal of the American
+Statistical Association_, *111*(515), 988-1003.
+https://doi.org/10.1080/01621459.2016.1141684.
+
+Rohrer JM, Brümmer M, Schmukle SC, Goebel J, Wagner GG (2017). ""What
+Else Are You Worried about?" Integrating Textual Responses into
+Quantitative Social Science Research." _PLoS ONE_, *12*(7), e0182156.
+https://doi.org/10.1371/journal.pone.0182156.
+
+---
+
+Schwartz HA, Eichstaedt JC, Kern ML, Dziurzynski L, Ramones SM, Agrawal
+M, Shah A, Kosinski M, Stillwell D, Seligman MEP, Ungar LH (2013).
+"Personality, Gender, and Age in the Language of Social Media: The
+Open-Vocabulary Approach." _PloS ONE_, *8*(9), e73791.
+https://doi.org/10.1371/journal.pone.0073791.
+
+Stephens M (2000). "Dealing with Label Switching in Mixture Models."
+_Journal of the Royal Statistical Society. Series B (Statistical
+Methodology)_, *62*(4), 795-809.
+
+Tausczik YR, Pennebaker JW (2010). "The Psychological Meaning of Words:
+LIWC and Computerized Text Analysis Methods." _Journal of Language and
+Social Psychology_, *29*(1), 24-54.
+https://doi.org/10.1177/0261927X09351676.
+
+---
+
+Watanabe S (2010). "Asymptotic Equivalence of Bayes Cross Validation
+and Widely Applicable Information Criterion in Singular Learning
+Theory." _Journal of Machine Learning Research_, *11*, 3571-3594.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
