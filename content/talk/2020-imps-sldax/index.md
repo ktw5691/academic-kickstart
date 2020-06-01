@@ -3,7 +3,7 @@ draft: false
 
 title: "Combining topic modeling and regression: Supervised topic modeling with covariates"
 event: 85th Annual Meeting of the Psychometric Society
-event_url: https://www.psychometricsociety.org/content/imps-2020
+event_url: https://www.psychometricsociety.org/speakers-0
 
 location: University of Maryland
 address:
