@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Kenneth Tyler Wilcox
+title: Kenneth Tyler Wilcox
 
 # Username (this should match the folder name)
 authors:
