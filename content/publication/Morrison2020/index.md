@@ -1,11 +1,11 @@
 ---
-title: "Humans discriminate among bottlenose dolphin signature whistles masked by noise: Investigating perceptual strategies for anthropogenic noise pollution"
+title: "How humans discriminate acoustically among bottlenose dolphin signature whistles with and without masking by boat noise"
 authors:
 - Evan Morrison
 - Caroline DeLong
 - admin
-date: "2020-06-01"
-doi: ""
+date: "2020-06-25"
+doi: "10.1121/10.0001450"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-06-02T00:00:00Z"
@@ -20,7 +20,7 @@ publication_types: ["2"]
 publication: "*Journal of the Acoustical Society of America*"
 publication_short: ""
 
-abstract: "Anthropogenic noise in the world’s oceans is known to impede many species’ ability to perceive acoustic signals, but little research has addressed how this noise affects the perception of bioacoustic signals used for communication in marine mammals. Bottlenose dolphins (Tursiops truncatus) use signature whistles containing identification information. Past studies have used human participants to gain insight into dolphin perception, but most previous research investigated echolocation. In Experiment 1, human participants were tested on their ability to discriminate among signature whistles from three dolphins. Participants’ performance was nearly errorless. In Experiment 2, participants identified signature whistles masked by five different samples of boat noise utilizing different signal-to-noise ratios. Lower signal-to-noise ratio and proximity in frequency between the whistle and noise both significantly decreased performance. Like dolphins, human participants primarily identified whistles using frequency contour. Participants reported greater use of amplitude in noise-present vs. noise-absent trials, but otherwise did not vary cue usage. These findings can be used to generate hypotheses about dolphins’ performance and auditory cue use for future research. This study may provide insight into how specific characteristics of boat noise affect dolphin whistle perception and may have implications for conservation and regulations."
+abstract: "Anthropogenic noise in the world’s oceans is known to impede many species’ ability to perceive acoustic signals, but little research has addressed how this noise affects the perception of bioacoustic signals used for communication in marine mammals. Bottlenose dolphins (Tursiops truncatus) use signature whistles containing identiﬁcation information. Past studies have used human participants to gain insight into dolphin perception, but most previous research investigated echolocation. In Experiment 1, human participants were tested on their ability to discriminate among signature whistles from three dolphins. Participants’ performance was nearly errorless. In Experiment 2, participants identiﬁed signature whistles masked by ﬁve different samples of boat noise utilizing different signal-tonoise ratios. Lower signal-to-noise ratio and proximity in frequency between the whistle and noise both signiﬁcantly decreased performance. Like dolphins, human participants primarily identiﬁed whistles using frequency contour. Participants reported greater use of amplitude in noise-present vs noise-absent trials, but otherwise did not vary cue usage. These ﬁndings can be used to generate hypotheses about dolphins’ performance and auditory cue use for future research. This study may provide insight into how speciﬁc characteristics of boat noise affect dolphin whistle perception and may have implications for conservation and regulations."
 summary: ""
 
 tags:
@@ -33,7 +33,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
+url_pdf: './papers/morrison-2020-how_humans_discriminate_acoustically_among_bottlenose_dolphin_signature.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
