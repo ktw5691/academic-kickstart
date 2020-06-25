@@ -50,7 +50,7 @@ focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Righ
 #   url: https://twitter.com/georgecushen
 url_code: ""
 url_pdf: ""
-url_slides: ""
+url_slides: "./slides/2020imps-sldax-slides.pdf"
 url_video: ""
 
 # Markdown Slides (optional).
