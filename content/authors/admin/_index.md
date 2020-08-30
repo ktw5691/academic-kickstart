@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Graduate Student in Quantitative Psychology
+role: PhD Candidate in Quantitative Psychology
 
 # Organizations/Affiliations
 organizations:
@@ -71,4 +71,4 @@ email: kwilcox3@nd.edu
 # - Visitors
 ---
 
-Kenneth is a graduate student in Quantitative Psychology at the University of Notre Dame. His research is currently focused in two streams: integrative data analysis and text mining. He is generally interested in Bayesian statistics, multilevel modeling, topic modeling, statistical software development, and cognition. He currently works with Dr. Lijuan (Peggy) Wang in the [Lab for Developmental and Health Methodology](https://ldhrm.nd.edu) researching integrative data analysis methods. He collaborates on applied research on comparative cognition in a variety of species with Dr. Caroline DeLong's [Comparative Cognition and Perception Lab](https://www.rit.edu/delonglab/).
+Kenneth is a PhD candidate in Quantitative Psychology at the University of Notre Dame. His research is currently focused in two streams: integrative data analysis and text mining. He is generally interested in Bayesian statistics, multilevel modeling, topic modeling, statistical software development, and their application to advancing psychological research. He currently works with Dr. Lijuan (Peggy) Wang in the [Lab for Developmental and Health Methodology](https://ldhrm.nd.edu) researching integrative data analysis methods. He collaborates on applied research on comparative cognition in a variety of species with Dr. Caroline DeLong's [Comparative Cognition and Perception Lab](https://www.rit.edu/delonglab/).
