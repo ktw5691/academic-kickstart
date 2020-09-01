@@ -6,8 +6,8 @@ authors:
 - Caitlin O'Loughlin
 - Michael McCloskey
 
-# date: "YYYY-MM-DD"
-# doi: XXXXXXXX
+date: "2020-09-01"
+doi: 10.1002/jclp.23045
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-08-05T00:00:00Z"
