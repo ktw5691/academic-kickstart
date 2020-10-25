@@ -2,7 +2,7 @@
 title: "psychtm: Text mining for psychological research"
 authors:
 - admin
-date: "2020-09-24"
+date: "2020-10-16"
 doi: ""
 
 # Publication type.
@@ -18,7 +18,7 @@ publication_short: ""
 abstract: Supports Bayesian topic modeling using the SLDAX framework.
 
 # Summary. An optional shortened abstract.
-summary: "v2020.8"
+summary: "v2020.9"
 
 tags:
 - software
