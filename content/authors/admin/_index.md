@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD Candidate in Quantitative Psychology
+role: Ph.D. Candidate in Quantitative Psychology
 
 # Organizations/Affiliations
 organizations:

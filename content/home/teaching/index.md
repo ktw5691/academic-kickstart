@@ -14,7 +14,11 @@ subtitle = ""
 
 # University of Notre Dame
 
-## *Teaching assistant* (2019-)
+## *Instructor of record* (2020-)
+
+- PSY63199: Graduate Seminar: Quantitative Study (graduate course)
+
+## *Teaching assistant* (2019-2020)
 
 - PSY60101: Quantitative Methods II (graduate course)
 - PSY61101: Quantitative Methods II Lab (graduate course)
