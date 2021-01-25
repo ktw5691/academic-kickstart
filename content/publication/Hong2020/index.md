@@ -5,20 +5,21 @@ authors:
 - admin
 - Ying Cheng
 date: "2020-12-02"
-doi:
-draft: true
+doi: 10.1080/00273171.2020.1852907
+draft: false
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2020-02-01T12:31:00Z"
+publishDate: "2020-01-25T12:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Multivariate Behavioral Research*, *56*(1), XX (Abstract)"
+publication: "*Multivariate Behavioral Research*"
+#, *56*(1), XX (Abstract)
 publication_short: ""
 
 abstract: ""
