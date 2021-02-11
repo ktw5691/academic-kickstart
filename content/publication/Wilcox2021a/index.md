@@ -6,7 +6,7 @@ authors:
 - Lijuan Wang
 
 date: "2021-01-09"
-# doi: 10.1002/jclp.23045
+doi: 10.1037/met0000397
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2021-01-10T00:00:00Z"
