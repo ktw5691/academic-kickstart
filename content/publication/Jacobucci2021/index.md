@@ -5,8 +5,8 @@ authors:
 - Brooke Ammerman
 - admin
 
-# date: "YYYY-MM-DD"
-# doi: XXXXXXXX
+date: "2021-02-24"
+doi: 10.1111/sltb.12668
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-05-18T00:00:00Z"
@@ -35,7 +35,7 @@ tags:
 - text mining
 - SLDAX
 
-featured: true
+featured: false
 
 # links:
 # - name: ""
