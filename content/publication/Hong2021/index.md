@@ -4,7 +4,7 @@ authors:
 - Maxwell Hong
 - admin
 - Ying Cheng
-date: "2020-12-02"
+date: "2021-03-15"
 doi: 10.1080/00273171.2020.1852907
 draft: false
 
@@ -19,7 +19,7 @@ publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: "*Multivariate Behavioral Research*"
-#, *56*(1), XX (Abstract)
+#, *56*(1), 150--151 (Abstract)
 publication_short: ""
 
 abstract: ""
