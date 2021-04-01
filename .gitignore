@@ -1,5 +1,7 @@
-public/
+/public/
+/resources/
 .idea/
 .Rproj.user
 .Rhistory
 .DS_Store
+Thumbs.db

@@ -29,7 +29,7 @@ tags:
 - text mining
 - Bayesian
 
-featured: true
+featured: false
 
 # links:
 # - name: ""

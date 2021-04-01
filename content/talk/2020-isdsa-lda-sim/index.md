@@ -34,12 +34,7 @@ tags:
 - text mining
 - Bayesian
 
-featured: true
-
-url_pdf:
-url_slides: ""
-url_video: ""
-url_code: ""
+featured: false
 
 image:
   caption: 'Directed acylic graphical representation of the LDA model.'

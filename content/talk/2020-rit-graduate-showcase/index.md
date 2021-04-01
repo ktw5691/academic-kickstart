@@ -40,11 +40,6 @@ tags:
 
 featured: false
 
-url_pdf:
-url_slides: ""
-url_video: "https://youtu.be/hrgLbcJDPXo"
-url_code: ""
-
 image:
   caption: ''
   focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
@@ -57,7 +52,7 @@ image:
 url_code: ""
 url_pdf: ""
 url_slides: ""
-url_video: ""
+url_video: "https://youtu.be/hrgLbcJDPXo"
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

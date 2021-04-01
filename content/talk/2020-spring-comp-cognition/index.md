@@ -39,11 +39,6 @@ tags:
 
 featured: false
 
-url_pdf:
-url_slides: ""
-url_video: ""
-url_code: ""
-
 image:
   caption: ''
   focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight

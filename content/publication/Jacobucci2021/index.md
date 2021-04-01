@@ -35,7 +35,7 @@ tags:
 - text mining
 - SLDAX
 
-featured: false
+featured: true
 
 # links:
 # - name: ""

@@ -36,11 +36,6 @@ tags:
 
 featured: true
 
-url_pdf:
-url_slides: ""
-url_video: ""
-url_code: ""
-
 image:
   caption: 'Directed acylic graphical representation of an SLDAX model with a Gaussian outcome.'
 focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
