@@ -1,8 +1,9 @@
 ---
 # Display name
 title: Kenneth Tyler Wilcox
-# Bold author name
-highlight_name: true
+
+# Highlight the author in author lists? (true/false)
+ highlight_name: false
 
 # Username (this should match the folder name)
 authors:
