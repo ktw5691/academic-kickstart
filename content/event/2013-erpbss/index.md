@@ -1,5 +1,6 @@
 ---
 title: "Predicting and preventing participant crosstalk: A multi-institutional investigation"
+
 event: "Second International Conference on Emerging Research Paradigms in Business and Social Sciences"
 event_url: http://www.mdx.ac.ae/research/conferences-and-events/past/emerging-research-paradigms-in-business-and-social-sciences/erpbss-2013
 
@@ -13,11 +14,12 @@ address:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2013-11-26
-date_end: 2013-11-28
+date: "2013-11-26T00:00:00Z"
+date_end: "2013-11-28T00:00:00Z"
 all_day: true
 
-publishDate: "2013-11-01T00:00:00" # Schedule page publish date
+# Schedule page publish date (NOT talk date).
+publishDate: "2013-11-01T00:00:00Z"
 draft: false
 
 authors:
@@ -67,5 +69,4 @@ math: false
 image:
   caption: ""
   focal_point: "Smart" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-
 ---
