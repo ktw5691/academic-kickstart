@@ -1,6 +1,8 @@
 ---
 # Display name
 title: Kenneth Tyler Wilcox
+# Bold author name
+highlight_name: true
 
 # Username (this should match the folder name)
 authors:

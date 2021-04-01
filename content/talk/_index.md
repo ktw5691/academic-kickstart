@@ -7,7 +7,7 @@ title: Recent & Upcoming Talks
 #   3 = Card
 view: 2
 
-# Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/media/` folder).
 header:
   caption: ""
   image: ""

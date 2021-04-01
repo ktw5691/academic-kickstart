@@ -122,7 +122,7 @@ contact_links = [
 ## Social
 ############################
 
-# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
+# Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
 sharing_image = "my-portrait.jpg"
 
 # Twitter username (without @). Used when a vistor shares your site on Twitter.
@@ -168,6 +168,13 @@ profile = true
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
 plugins_js  = []
+
+# Show a copyright license from creativecommons.org in the site footer?
+# Page specific copyright licenses are also possible by adding this option to a page's front matter.
+copyright_license = {enable = false, allow_derivatives = false, share_alike = true, allow_commercial = false, notice = "This work is licensed under {license}"}
+
+# Show related content at the bottom of pages?
+show_related = {page = true, post = true, project = true, publication = true, talk = true}
 
 # Avatars.
 # An avatar is an image that appears next to a user's name.
@@ -276,3 +283,14 @@ plugins_js  = []
 [marketing]
   google_analytics = "UA-92616491-2"
   # google_tag_manager = ""
+
+# PLACE THIS NEW [CMS] CONFIG SECTION AT THE END OF THE FILE
+
+# Content Management System
+[cms]
+ # Enable the admin panel. See https://wowchemy.com/docs/install/
+ netlify_cms = true
+
+# Icon Pack Extensions
+[icon.pack]
+ ai = true  # Enable the Academicons icon pack https://jpswalsh.github.io/academicons/
