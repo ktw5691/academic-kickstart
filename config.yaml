@@ -34,6 +34,7 @@ summaryLength: 30
 paginate: 10
 enableEmoji: false
 enableRobotsTXT: true
+# canonical: '{{ .Permalink }}'
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$, \.knit\.md$, \.utf8\.md$]
 permalinks:

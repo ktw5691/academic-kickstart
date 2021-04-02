@@ -10,7 +10,7 @@ day_night: true
 font: my_font_set_nord
 # Speed optimized, Google free alternative
 # font: native
-font_size: L
+font_size: L # Use L for optimal accessibility metric on Lighthouse
 
 # SEO
 
