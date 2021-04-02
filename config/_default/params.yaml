@@ -10,7 +10,7 @@ day_night: true
 font: my_font_set_nord
 # Speed optimized, Google free alternative
 # font: native
-font_size: M
+font_size: L
 
 # SEO
 
@@ -74,7 +74,7 @@ address_format: en-us
 
 # Site features
 
-highlight: true
+highlight: false
 highlight_languages:
   - r
   - cpp
@@ -109,7 +109,7 @@ copyright_license:
   share_alike: true
   allow_commercial: false
   notice: 'This work is licensed under {license}'
-abstract_length: 135
+abstract_length: 200
 plugins_js: []
 avatar:
   gravatar: false
@@ -161,3 +161,6 @@ cms:
 icon:
   pack:
     ai: true
+security.csp:
+  policy: ''
+  report_only: false
