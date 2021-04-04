@@ -47,16 +47,15 @@ url_video:
 url_code:
 
 # Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "sldax-dag.png"
+# header:
+#   caption:
+#   image: "sldax-dag.png"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: "Directed acyclic graphical representation of the SLDAX model."
-  focal_point: "Smart" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-
+# image:
+#   caption: "Directed acyclic graphical representation of the SLDAX model."
+#   focal_point: "Smart" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 ---
 
 The temporal and financial resources needed to qualitatively analyze textual data can be prohibitive. However, a growing collection of quantitative modeling approaches for text offer potential alternatives. One latent variable approach, topic modeling, assumes that text can be summarized as a mixture of latent categories (i.e., topics; Blei, Ng, & Jordan, 2003). By representing patterns of word co-occurrences as topics, major themes and features of the text can be extracted and studied on their own or used as variables in subsequent analyses. Applications of topic modeling in psychological research include prediction of students’ test scores (Kim, Kwak, & Cohen, 2017; Kim, Kwak, Cardozo-Gaibisso, Buxton, & Cohen, 2017), understanding open-ended survey questions regarding sources of anxiety (Rohrer, Brümmer, Schmukle, Goebel, & Wagner, 2017), and, in conjunction with item-response theory models, prediction of clinical diagnoses (He, 2013).
@@ -92,6 +91,8 @@ We assume a vocabulary of V unique words and let $\bar{z}_{kd} = N_d^{-1} \sum\_
  - 4.2.2) Draw word $w\_{dn} | z\_{dn} = k \sim \text{Categorical}(\beta_k)$,
 
 - 4.3) Draw outcome $y_d \sim \text{Normal} \left(\sum\_{j=1}^p \eta_j x\_{jd} + \sum\_{k=1}^K \eta\_{p+k} \bar{z}\_{kd}, \sigma^2 \right)$.
+
+{{< figure library="true" src="sldax-dag.png" title="Directed acyclic graphical representation of the SLDAX model." >}}
 
 # References
 Blei, D. M., & McAuliffe, J. D. (2010). Supervised topic models. *ArXiv:1003.0783 [Stat]*. Retrieved from http://arxiv.org/abs/1003.0783

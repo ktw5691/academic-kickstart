@@ -10,14 +10,21 @@ date: "2016-08-01T00:00:00Z"
 external_link: ""
 
 # Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "sldax-dag.png"
+# header:
+#   caption:
+#   image: "sldax-dag.png"
 
-# To use, add an image named `featured.jpg/png` to your project's folder.
-image:
-  caption: ""
-  focal_point: Smart # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+# Featured image
+# To use, place an image named `featured.jpg/png` in your page's folder.
+# Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
+# Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+# Set `preview_only` to `true` to just use the image for thumbnails.
+# image:
+#   placement: 2
+#   caption: ""
+#   focal_point: "Center"
+#   preview_only: false
+#   alt_text: ""
 
 links:
 # - icon: twitter
@@ -36,3 +43,5 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
+{{< figure library="true" src="sldax-dag.png" title="Directed acyclic graph of the SLDAX model." >}}

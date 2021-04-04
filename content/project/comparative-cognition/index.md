@@ -12,10 +12,10 @@ date: "2015-02-01T00:00:00Z"
 # Optional external URL for project (replaces project detail page).
 external_link: https://www.rit.edu/delonglab/
 
-# Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "otter.jpg"
+# # Optional header image (relative to `assets/media/` folder)
+# header:
+#   caption:
+#   image: "otter.jpg"
 
 # To use, add an image named `featured.jpg/png` to your project's folder.
 image:
@@ -40,3 +40,5 @@ url_video: ""
 slides: ""
 
 ---
+
+{{< figure library="true" src="otter.jpg" title="" >}}

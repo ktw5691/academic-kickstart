@@ -52,16 +52,16 @@ url_source: ''
 url_video: ''
 
 # Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "sldax-dag.png"
+# header:
+#   caption:
+#   image: "sldax-dag.png"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: "Observed variables are represented by shaded circles: $w_{dn}$ denotes the $n$th word in document $d$; for subject $d$, $\\vec{x}_d$ denotes $p$ predictor scores and $y_d$ denotes the outcome for subject $d$. Latent variables are represented by unshaded circles: $z_{dn}$ denotes topic assignments for each word in each document; $\\vec{\\theta}_d$ denotes the $K$ topic proportions for each document; $\\vec{\\beta}_k$ denotes the $V$ topic-word probabilities for topic $k$; $\\vec{\\eta}$ denotes the regression coefficients relating $\\vec{x}_d$ and $\\vec{\\bar{z}}_d$ to $y_d$; $\\sigma^2$ denotes the residual variance of $Y$. Fixed parameters are represented by dots: $\\vec{\\alpha}$ denotes the hyperparameters of the topic probabilities; $\\vec{\\gamma}$ denotes the hyperparameters of the topic-word probabilities; $\\vec{\\mu}_0$ and $\\vec{\\Sigma}_0$ denote the prior mean vector and covariance matrix of $\\vec{\\eta}$, respectively; $a_0$ and $b_0$ are the shape and rate hyperparameters for $\\sigma^2$. A set of (conditionally) independent replicates (i.e., words given topics; documents; word probabilities given a topic) is represented by a rectangle."
-  focal_point: "Smart"  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  preview_only: false
+# image:
+#   caption: "Observed variables are represented by shaded circles: $w_{dn}$ denotes the $n$th word in document $d$; for subject $d$, $\\vec{x}_d$ denotes $p$ predictor scores and $y_d$ denotes the outcome for subject $d$. Latent variables are represented by unshaded circles: $z_{dn}$ denotes topic assignments for each word in each document; $\\vec{\\theta}_d$ denotes the $K$ topic proportions for each document; $\\vec{\\beta}_k$ denotes the $V$ topic-word probabilities for topic $k$; $\\vec{\\eta}$ denotes the regression coefficients relating $\\vec{x}_d$ and $\\vec{\\bar{z}}_d$ to $y_d$; $\\sigma^2$ denotes the residual variance of $Y$. Fixed parameters are represented by dots: $\\vec{\\alpha}$ denotes the hyperparameters of the topic probabilities; $\\vec{\\gamma}$ denotes the hyperparameters of the topic-word probabilities; $\\vec{\\mu}_0$ and $\\vec{\\Sigma}_0$ denote the prior mean vector and covariance matrix of $\\vec{\\eta}$, respectively; $a_0$ and $b_0$ are the shape and rate hyperparameters for $\\sigma^2$. A set of (conditionally) independent replicates (i.e., words given topics; documents; word probabilities given a topic) is represented by a rectangle."
+#   focal_point: "Smart"  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+#   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -78,3 +78,5 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+{{< figure library="true" src="sldax-dag.png" title="Directed acyclic graph of the SLDAX model." caption="Directed acyclic graph of the SLDAX model. Observed variables are represented by shaded circles: $w_{dn}$ denotes the $n$th word in document $d$; for subject $d$, $\\vec{x}_d$ denotes $p$ predictor scores and $y_d$ denotes the outcome for subject $d$. Latent variables are represented by unshaded circles: $z_{dn}$ denotes topic assignments for each word in each document; $\\vec{\\theta}_d$ denotes the $K$ topic proportions for each document; $\\vec{\\beta}_k$ denotes the $V$ topic-word probabilities for topic $k$; $\\vec{\\eta}$ denotes the regression coefficients relating $\\vec{x}_d$ and $\\vec{\\bar{z}}_d$ to $y_d$; $\\sigma^2$ denotes the residual variance of $Y$. Fixed parameters are represented by dots: $\\vec{\\alpha}$ denotes the hyperparameters of the topic probabilities; $\\vec{\\gamma}$ denotes the hyperparameters of the topic-word probabilities; $\\vec{\\mu}_0$ and $\\vec{\\Sigma}_0$ denote the prior mean vector and covariance matrix of $\\vec{\\eta}$, respectively; $a_0$ and $b_0$ are the shape and rate hyperparameters for $\\sigma^2$. A set of (conditionally) independent replicates (i.e., words given topics; documents; word probabilities given a topic) is represented by a rectangle." >}}

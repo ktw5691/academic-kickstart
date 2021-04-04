@@ -37,7 +37,7 @@ tags:
 featured: false
 
 image:
-  caption: 'Directed acylic graphical representation of the LDA model.'
+  caption: 'Directed acylic graph of the LDA model.'
 focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 
 # links:

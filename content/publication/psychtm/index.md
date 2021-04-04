@@ -40,16 +40,16 @@ url_source: ''
 url_video: ''
 
 # Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "sldax-dag.png"
+# header:
+#   caption:
+#   image: "sldax-dag.png"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: 'SLDAX model.'
-  focal_point: "Center"  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  preview_only: false
+# image:
+#   caption: 'SLDAX model.'
+#   focal_point: "Center"  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+#   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -68,3 +68,5 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+{{< figure library="true" src="sldax-dag.png" title="Directed acyclic graph of the SLDAX model." >}}

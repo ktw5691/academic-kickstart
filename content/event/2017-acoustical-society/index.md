@@ -34,9 +34,9 @@ featured: false
 draft: false
 
 # Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "penguins.jpg"
+# header:
+#   caption:
+#   image: "penguins.jpg"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -53,5 +53,6 @@ image:
 #   Otherwise, set `projects = []`.
 projects:
 - comparative-cognition
-
 ---
+
+{{< figure library="true" src="penguins.jpg" title="" >}}

@@ -51,5 +51,4 @@ url_code:
 image:
   caption: ""
   focal_point: "Smart" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-
 ---

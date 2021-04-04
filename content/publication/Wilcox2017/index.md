@@ -46,16 +46,16 @@ url_source: ''
 url_video: ''
 
 # Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "htmm-dag.png"
+# header:
+#   caption:
+#   image: "htmm-dag.png"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: 'Hidden topic Markov model.'
-  focal_point: "Center"
-  preview_only: false
+# image:
+#   caption: 'Hidden topic Markov model.'
+#   focal_point: "Center"
+#   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -72,3 +72,5 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+{{< figure library="true" src="htmm-dag.png" title="Directed acyclic graph of the HTMM model." >}}

@@ -50,14 +50,15 @@ url_code:
 math: false
 
 # Optional header image (relative to `assets/media/` folder)
-header:
-  caption:
-  image: "htmm-dag.png"
+# header:
+#   caption:
+#   image: "htmm-dag.png"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: "Graphical model of the Hidden Topic Markov Model."
-  focal_point: "Smart" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-
+# image:
+#   caption: "Graphical model of the Hidden Topic Markov Model."
+#   focal_point: "Smart" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 ---
+
+{{< figure library="true" src="htmm-dag.png" title="Graphical model of the Hidden Topic Markov Model." >}}

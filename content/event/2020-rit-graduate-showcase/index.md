@@ -1,5 +1,5 @@
 ---
-title: Visual object categorization in goldfish (Carassius auratus)
+title: Visual object categorization in goldfish (Carassius auratus) 
 event: RIT Graduate Showcase
 event_url: https://www.rit.edu/academicaffairs/graduateshowcase/2020-virtual-presentations
 
@@ -40,9 +40,9 @@ tags:
 
 featured: false
 
-image:
-  caption: ''
-  focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+# image:
+#   caption: ''
+#   focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 
 # links:
 # - icon: twitter
