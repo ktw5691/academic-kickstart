@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Kenneth Tyler Wilcox # Website name
-baseurl: https://ktylerwilcox.netlify.com/ # Website URL
+baseurl: https://www.ktylerwilcox.me/ # Website URL
 copyright: '&copy;{year} Kenneth Tyler Wilcox' # Footer text, e.g. '© {year} Me'
 
 ############################
