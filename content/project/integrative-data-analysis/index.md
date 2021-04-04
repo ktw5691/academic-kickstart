@@ -1,6 +1,6 @@
 ---
 title: Integrative Data Analysis
-summary: Research on the analysis of participant-level and study-level data from multiple studies.
+summary: Cumulative analysis of participant-level and study-level data from multiple studies.
 tags:
 - integrative data analysis
 - cumulative data analysis

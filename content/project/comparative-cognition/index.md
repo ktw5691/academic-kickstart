@@ -1,6 +1,6 @@
 ---
 title: Comparative Cognition
-summary: Comparative cognition research involving humans, dolphins, goldfish, penguins, and river otters.
+summary: Cross-species studies of cognition and perception in humans, dolphins, goldfish, penguins, and river otters.
 tags:
 - comparative cognition
 - perception

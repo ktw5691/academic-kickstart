@@ -1,6 +1,6 @@
 ---
 title: Topic Modeling
-summary: Extensions of topic modeling.
+summary: Measurement and structural latent variable models for text data.
 tags:
 - topic modeling
 - text mining
