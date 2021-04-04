@@ -47,11 +47,16 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
+# Optional header image (relative to `assets/media/` folder)
+header:
+  caption:
+  image: "penguins.jpg"
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: ''
-  focal_point: ""
+  focal_point: "Smart"
   preview_only: false
 
 # Associated Projects (optional).

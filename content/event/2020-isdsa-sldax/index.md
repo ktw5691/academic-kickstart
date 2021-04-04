@@ -36,6 +36,11 @@ tags:
 
 featured: true
 
+# Optional header image (relative to `assets/media/` folder)
+header:
+  caption:
+  image: "sldax-dag.png"
+
 image:
   caption: 'Directed acylic graphical representation of an SLDAX model with a Gaussian outcome.'
 focal_point: Smart  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight

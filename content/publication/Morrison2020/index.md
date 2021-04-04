@@ -33,7 +33,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: './papers/morrison-2020-how_humans_discriminate_acoustically_among_bottlenose_dolphin_signature.pdf'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

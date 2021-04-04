@@ -9,6 +9,11 @@ date: "2016-08-01T00:00:00Z"
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
+# Optional header image (relative to `assets/media/` folder)
+header:
+  caption:
+  image: "sldax-dag.png"
+
 # To use, add an image named `featured.jpg/png` to your project's folder.
 image:
   caption: ""

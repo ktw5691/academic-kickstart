@@ -60,10 +60,16 @@ projects: ["comparative-cognition"]
 #   Otherwise, set `slides: ""`.
 slides: ""
 
+# Optional header image (relative to `assets/media/` folder)
+header:
+  caption:
+  image: "otter.jpg"
+
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: ""
-  focal_point: "Top" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+  focal_point: "Smart" # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   preview_only: false
 ---

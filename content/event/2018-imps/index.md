@@ -49,6 +49,11 @@ url_code: ""
 
 math: false
 
+# Optional header image (relative to `assets/media/` folder)
+header:
+  caption:
+  image: "htmm-dag.png"
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:

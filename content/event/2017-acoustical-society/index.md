@@ -33,6 +33,11 @@ lastmod: 2020-05-19T12:10:22-04:00
 featured: false
 draft: false
 
+# Optional header image (relative to `assets/media/` folder)
+header:
+  caption:
+  image: "penguins.jpg"
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
